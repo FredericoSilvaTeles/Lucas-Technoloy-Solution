@@ -1,0 +1,33 @@
+name: .NET
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build ./source/LucasTechnologyServices.sln
+    - name: Test
+      run: dotnet test 'test/**/*.csproj'
+    - name: Fortify on Demand Scan
+      # You may pin to the exact commit or the version.
+      # uses: fortify/gha-setup-fod-uploader@636f3c3a14aec1747eec5242a02c6349e4f3cce6
+      uses: fortify/gha-setup-fod-uploader@v1.0.1
+      with:
+        # FoDUploader version to use
+        version: default is latest
+          
