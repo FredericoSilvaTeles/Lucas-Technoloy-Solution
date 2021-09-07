@@ -1,6 +1,6 @@
 namespace LucasTechnologyServices.Module.Core.Models
 {
-    public enum Name
+    public enum AddressType
     {
         Billing,
         Employees,
