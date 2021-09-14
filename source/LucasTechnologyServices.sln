@@ -27,9 +27,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LucasTechnologyServices.Mod
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LucasTechnologyServices.Module.HR.Tests", "..\test\LucasTechnologyServices.Module.HR\LucasTechnologyServices.Module.HR.Tests.csproj", "{93B26A00-9B5E-40A3-BD1B-5891E878D09F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LucasTechnologyServices.Module.Erp", "Modules\LucasTechnologyServices.Module.Erp\LucasTechnologyServices.Module.Erp.csproj", "{1A4C1E7B-EF84-4C96-9F0E-1B17D84C73B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LucasTechnologyServices.Module.Erp", "Modules\LucasTechnologyServices.Module.Erp\LucasTechnologyServices.Module.Erp.csproj", "{1A4C1E7B-EF84-4C96-9F0E-1B17D84C73B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LucasTechnologyServices.Module.Erp.Tests", "..\test\LucasTechnologyServices.Module.Erp.Tests\LucasTechnologyServices.Module.Erp.Tests.csproj", "{6738C971-2F57-47A6-98FB-B85AB87CDE92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LucasTechnologyServices.Module.Erp.Tests", "..\test\LucasTechnologyServices.Module.Erp.Tests\LucasTechnologyServices.Module.Erp.Tests.csproj", "{6738C971-2F57-47A6-98FB-B85AB87CDE92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LucasTechnologyServices.Module.Crm", "Modules\LucasTechnologyServices.Module.Crm\LucasTechnologyServices.Module.Crm.csproj", "{44ACA3BB-E6D3-4D15-A592-2C2CA452E4BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -149,6 +151,18 @@ Global
 		{6738C971-2F57-47A6-98FB-B85AB87CDE92}.Release|x64.Build.0 = Release|Any CPU
 		{6738C971-2F57-47A6-98FB-B85AB87CDE92}.Release|x86.ActiveCfg = Release|Any CPU
 		{6738C971-2F57-47A6-98FB-B85AB87CDE92}.Release|x86.Build.0 = Release|Any CPU
+		{44ACA3BB-E6D3-4D15-A592-2C2CA452E4BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44ACA3BB-E6D3-4D15-A592-2C2CA452E4BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44ACA3BB-E6D3-4D15-A592-2C2CA452E4BF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{44ACA3BB-E6D3-4D15-A592-2C2CA452E4BF}.Debug|x64.Build.0 = Debug|Any CPU
+		{44ACA3BB-E6D3-4D15-A592-2C2CA452E4BF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{44ACA3BB-E6D3-4D15-A592-2C2CA452E4BF}.Debug|x86.Build.0 = Debug|Any CPU
+		{44ACA3BB-E6D3-4D15-A592-2C2CA452E4BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44ACA3BB-E6D3-4D15-A592-2C2CA452E4BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44ACA3BB-E6D3-4D15-A592-2C2CA452E4BF}.Release|x64.ActiveCfg = Release|Any CPU
+		{44ACA3BB-E6D3-4D15-A592-2C2CA452E4BF}.Release|x64.Build.0 = Release|Any CPU
+		{44ACA3BB-E6D3-4D15-A592-2C2CA452E4BF}.Release|x86.ActiveCfg = Release|Any CPU
+		{44ACA3BB-E6D3-4D15-A592-2C2CA452E4BF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -164,6 +178,7 @@ Global
 		{93B26A00-9B5E-40A3-BD1B-5891E878D09F} = {D9812ECB-4630-450F-9951-9B67398B0750}
 		{1A4C1E7B-EF84-4C96-9F0E-1B17D84C73B5} = {B7FC69B5-4967-4B87-A9F1-13CC826EE424}
 		{6738C971-2F57-47A6-98FB-B85AB87CDE92} = {D9812ECB-4630-450F-9951-9B67398B0750}
+		{44ACA3BB-E6D3-4D15-A592-2C2CA452E4BF} = {B7FC69B5-4967-4B87-A9F1-13CC826EE424}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6619A715-0457-42A9-9F0A-719053D83172}
