@@ -26,7 +26,7 @@ jobs:
       run: dotnet build ./source/LucasTechnologyServices.sln
       
     - name: Restore
-      run: dotnet restore ./source/**/*.csproj
+      run: dotnet restore ./source/LucasTechnologyServices.sln
 
     
 
