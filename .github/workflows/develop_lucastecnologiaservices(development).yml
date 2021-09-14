@@ -6,7 +6,7 @@ name: Build and deploy ASP.Net Core app to Azure Web App - lucastecnologiaservic
 on:
   push:
     branches:
-      - develop
+      - master
   workflow_dispatch:
 
 jobs:
@@ -23,7 +23,7 @@ jobs:
         include-prerelease: true
 
     - name: Build with dotnet
-      run: dotnet build --configuration Release
+      run: dotnet build ./source/LucasTechnologyServices.sln Release
 
     - name: dotnet publish
       run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
@@ -47,11 +47,4 @@ jobs:
       with:
         name: .net-app
 
-    - name: Deploy to Azure Web App
-      id: deploy-to-webapp
-      uses: azure/webapps-deploy@v2
-      with:
-        app-name: 'lucastecnologiaservices'
-        slot-name: 'development'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_ddc3b6cfab034a21958f0fbe15ea6ef8 }}
-        package: .
+    
