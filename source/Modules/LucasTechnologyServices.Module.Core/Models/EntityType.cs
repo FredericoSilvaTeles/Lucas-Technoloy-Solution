@@ -19,16 +19,16 @@ namespace LucasTechnologyServices.Module.Core.Models
         [StringLength(450)]
         public string Name { get { return Id; } }
 
-        public bool IsMenuable { get; private set; }
+        public bool IsMenuable { get; set; }
 
         [StringLength(450)]
-        public string AreaName { get; private set; }
+        public string AreaName { get; set; }
 
         [StringLength(450)]
-        public string RoutingController { get; private set; }
+        public string RoutingController { get; set; }
 
         [StringLength(450)]
-        public string RoutingAction { get; private set; }
+        public string RoutingAction { get; set; }
 
     }
 }

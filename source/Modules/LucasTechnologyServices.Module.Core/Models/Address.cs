@@ -11,37 +11,37 @@ namespace LucasTechnologyServices.Module.Core.Models
         }
         
         [StringLength(450)]
-        public string ContactName { get; private set; }
+        public string ContactName { get; set; }
 
         [StringLength(450)]
-        public string Phone { get; private set; }
+        public string Phone { get; set; }
 
         [StringLength(450)]
-        public string AddressLine1 { get; private set; }
+        public string AddressLine1 { get; set; }
 
         [StringLength(450)]
-        public string AddressLine2 { get; private set; }
+        public string AddressLine2 { get; set; }
 
         [StringLength(450)]
         public string City { get; private set; }
 
         [StringLength(450)]
-        public string ZipCode { get; private set; }
+        public string ZipCode { get; set; }
 
-        public long? DistrictId { get; private set; }
+        public long? DistrictId { get; set; }
 
-        public District District { get; private set; }
+        public District District { get; set; }
 
         [Required(ErrorMessage = "The {0} field is required.")]
-        public long StateOrProvinceId { get; private set; }
+        public long StateOrProvinceId { get; set; }
 
-        public StateOrProvince StateOrProvince { get; private set; }
+        public StateOrProvince StateOrProvince { get; set; }
 
         [Required(ErrorMessage = "The {0} field is required.")]
         [StringLength(450)]
-        public string CountryId { get; private set; }
+        public string CountryId { get; set; }
 
-        public Country Country { get; private set; }
+        public Country Country { get; set; }
 
     }
         

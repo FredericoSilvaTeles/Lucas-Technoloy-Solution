@@ -6,7 +6,7 @@ namespace LucasTechnologyServices.Module.Core.Models
 {
     public class Role : IdentityRole<long>, IEntityWithTypedId<long>
     {
-        public IList<UserRole> Users { get; private set; }
+        public IList<UserRole> Users { get; set; }
         
     }
 }
