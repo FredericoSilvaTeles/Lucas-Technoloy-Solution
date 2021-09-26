@@ -12,12 +12,12 @@ namespace LucasTechnologyServices.Module.Core.Models
 
         
         [StringLength(100)]
-        public string Value;
+        public string Value { get; set; }
 
 
         [StringLength(100)]
-        public string Module { get; private set; }
+        public string Module { get; set; }
 
-        public bool IsVisibleInCommonSettingPage { get; private set; }
+        public bool IsVisibleInCommonSettingPage { get; set; }
     }
 }
