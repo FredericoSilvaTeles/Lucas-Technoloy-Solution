@@ -1,4 +1,4 @@
-using LucasTechnologyServices.Module.Core.Extensions.Settings;
+﻿using LucasTechnologyServices.Module.Core.Extensions.Settings;
 using System.Collections.Generic;
 
 namespace LucasTechnologyServices.Services.Api.ViewModels.Manage
