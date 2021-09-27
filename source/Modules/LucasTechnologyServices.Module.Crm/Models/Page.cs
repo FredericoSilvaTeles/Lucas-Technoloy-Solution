@@ -10,6 +10,8 @@ namespace LucasTechnologyServices.Module.Crm.Models
     public class Page : Content
     {
         public string Body { get; private set; }
-        public string Slug { get; internal set; }
+
+        public string Slug { get; private set; }
+
     }
 }
