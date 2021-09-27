@@ -8,18 +8,18 @@ namespace LucasTechnologyServices.Module.Core.Models
     {
         [Required(ErrorMessage = "The {0} field is required.")]
         [StringLength(450)]
-        public string Slug { get; private set; }
+        public string Slug { get; set; }
 
         [Required(ErrorMessage = "The {0} field is required.")]
         [StringLength(450)]
-        public string Name { get; private set; }
+        public string Name { get; set; }
 
-        public long EntityId { get; private set; }
+        public long EntityId { get; set; }
 
         [StringLength(450)]
-        public string EntityTypeId { get; private set; }
+        public string EntityTypeId { get; set; }
 
-        public EntityType EntityType { get; private set; }
+        public EntityType EntityType { get; set; }
 
 
 

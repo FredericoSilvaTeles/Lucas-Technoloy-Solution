@@ -17,7 +17,7 @@ namespace LucasTechnologyServices.Module.Core.Models
         }
         [Required(ErrorMessage = "The {0} filed is required")]
         [StringLength(20)]
-        public string Number { get; private set; }
+        public string Number { get; set; }
 
 
     }
