@@ -1,5 +1,4 @@
-﻿using LucasTechnologyServices.Module.Core.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,14 +9,13 @@ namespace LucasTechnologyServices.Module.Core.Services._1_Interfaces
     public interface IEntityService
     {
         string ToSafeSlug(string slug, long entityId, string entityTypeId);
-
-        Entity Get(long entityId, string entityTypeId);
-
+        
+        IEntityService Get(long entityId, string entitytypeId);
+        
         void Add(string name, string slug, long entityId, string entityTypeId);
-
-        void Update(string newName, string newSlug, long entityId, string entityTypeId);
-
-        Task Remove(long entityId, string entityTypeId);
-
+        
+        void Update(string newName, string newSlug, long entityid, string entityTypeId);
+        
+        void Remove(long entityId, string entityTypeId);
     }
 }

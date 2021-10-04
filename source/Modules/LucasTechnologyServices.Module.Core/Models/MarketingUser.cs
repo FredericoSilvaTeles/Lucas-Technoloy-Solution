@@ -19,12 +19,12 @@ namespace LucasTechnologyServices.Module.Core.Models
             Password = password;
                
         }
-                public string FirstName { get; set; }
-        public string MiddleName { get; set; }
-        public string LastName { get; set;}
-        public string MarketingEmail { get; set; }
-        public string Login { get; set; }
-        public string Password { get; set; }
+                public string FirstName { get; private set; }
+        public string MiddleName { get; private set; }
+        public string LastName { get; private set;}
+        public string MarketingEmail { get; private set; }
+        public string Login { get; private set; }
+        public string Password { get; private set; }
         
      
         

@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31710.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sources", "sources", "{956DC0A7-245E-41A2-A6A7-AB8E7306E7EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{FA31EBD7-EB85-4F5D-8745-7D4CEE324F55}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ALOS.Module.Core", "source\Modules\Core\ALOS.Module.Core\ALOS.Module.Core.njsproj", "{A5F95A07-8371-4E35-B10C-8FBB516CF2C5}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ALOS.Module.Accounting", "source\Modules\Accounting\ALOS.Module.Accounting\ALOS.Module.Accounting.njsproj", "{79369934-9817-4113-98FA-BDF2F654F940}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ALOS.Module.Crm", "source\Modules\Crm\ALOS.Module.Crm\ALOS.Module.Crm.njsproj", "{543936AC-3BA2-4EAD-A268-6EAE01AC7092}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ALOS.Modules.Erp", "source\Modules\Erp\ALOS.Modules.Erp\ALOS.Modules.Erp.njsproj", "{D57A683E-F8F1-48E0-9CC4-2943782A9E7A}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ALOS.Modules.Erp.ConsoleApp", "source\Modules\Console Application\ALOS.Modules.Erp.ConsoleApp\ALOS.Modules.Erp.ConsoleApp.njsproj", "{3645785C-6110-449C-9FDD-B99728FBD763}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ALOS.Modules.Financial", "source\Modules\Financial\ALOS.Modules.Financial\ALOS.Modules.Financial.njsproj", "{3DE1F7A1-58BF-453F-8444-F0528672877B}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ALOS.Modules.HR", "source\Modules\HR\ALOS.Modules.HR\ALOS.Modules.HR.njsproj", "{EB749F0A-86B6-4733-9519-ABB0F43DEAAE}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ALOS.Modules.ServiceDesk", "source\Modules\Service Desk\ALOS.Modules.ServiceDesk\ALOS.Modules.ServiceDesk.njsproj", "{BA752A05-9B7B-4646-8BF5-7F43667372EF}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ALOS.Modules.Systems-IT", "source\Modules\Systems-IT\ALOS.Modules.Systems-IT\ALOS.Modules.Systems-IT.njsproj", "{5D5DED00-C4B4-461A-A917-5250D405888C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5F95A07-8371-4E35-B10C-8FBB516CF2C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5F95A07-8371-4E35-B10C-8FBB516CF2C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5F95A07-8371-4E35-B10C-8FBB516CF2C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5F95A07-8371-4E35-B10C-8FBB516CF2C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79369934-9817-4113-98FA-BDF2F654F940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79369934-9817-4113-98FA-BDF2F654F940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79369934-9817-4113-98FA-BDF2F654F940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79369934-9817-4113-98FA-BDF2F654F940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{543936AC-3BA2-4EAD-A268-6EAE01AC7092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{543936AC-3BA2-4EAD-A268-6EAE01AC7092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{543936AC-3BA2-4EAD-A268-6EAE01AC7092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{543936AC-3BA2-4EAD-A268-6EAE01AC7092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D57A683E-F8F1-48E0-9CC4-2943782A9E7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D57A683E-F8F1-48E0-9CC4-2943782A9E7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D57A683E-F8F1-48E0-9CC4-2943782A9E7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D57A683E-F8F1-48E0-9CC4-2943782A9E7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3645785C-6110-449C-9FDD-B99728FBD763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3645785C-6110-449C-9FDD-B99728FBD763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3645785C-6110-449C-9FDD-B99728FBD763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3645785C-6110-449C-9FDD-B99728FBD763}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DE1F7A1-58BF-453F-8444-F0528672877B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DE1F7A1-58BF-453F-8444-F0528672877B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DE1F7A1-58BF-453F-8444-F0528672877B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DE1F7A1-58BF-453F-8444-F0528672877B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB749F0A-86B6-4733-9519-ABB0F43DEAAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB749F0A-86B6-4733-9519-ABB0F43DEAAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB749F0A-86B6-4733-9519-ABB0F43DEAAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB749F0A-86B6-4733-9519-ABB0F43DEAAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA752A05-9B7B-4646-8BF5-7F43667372EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA752A05-9B7B-4646-8BF5-7F43667372EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA752A05-9B7B-4646-8BF5-7F43667372EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA752A05-9B7B-4646-8BF5-7F43667372EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D5DED00-C4B4-461A-A917-5250D405888C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D5DED00-C4B4-461A-A917-5250D405888C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D5DED00-C4B4-461A-A917-5250D405888C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D5DED00-C4B4-461A-A917-5250D405888C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FA31EBD7-EB85-4F5D-8745-7D4CEE324F55} = {956DC0A7-245E-41A2-A6A7-AB8E7306E7EE}
+		{A5F95A07-8371-4E35-B10C-8FBB516CF2C5} = {FA31EBD7-EB85-4F5D-8745-7D4CEE324F55}
+		{79369934-9817-4113-98FA-BDF2F654F940} = {FA31EBD7-EB85-4F5D-8745-7D4CEE324F55}
+		{543936AC-3BA2-4EAD-A268-6EAE01AC7092} = {FA31EBD7-EB85-4F5D-8745-7D4CEE324F55}
+		{D57A683E-F8F1-48E0-9CC4-2943782A9E7A} = {FA31EBD7-EB85-4F5D-8745-7D4CEE324F55}
+		{3645785C-6110-449C-9FDD-B99728FBD763} = {FA31EBD7-EB85-4F5D-8745-7D4CEE324F55}
+		{3DE1F7A1-58BF-453F-8444-F0528672877B} = {FA31EBD7-EB85-4F5D-8745-7D4CEE324F55}
+		{EB749F0A-86B6-4733-9519-ABB0F43DEAAE} = {FA31EBD7-EB85-4F5D-8745-7D4CEE324F55}
+		{BA752A05-9B7B-4646-8BF5-7F43667372EF} = {FA31EBD7-EB85-4F5D-8745-7D4CEE324F55}
+		{5D5DED00-C4B4-461A-A917-5250D405888C} = {FA31EBD7-EB85-4F5D-8745-7D4CEE324F55}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C452251-DB4C-40FC-8A9F-D0EE354C0D04}
+	EndGlobalSection
+EndGlobal

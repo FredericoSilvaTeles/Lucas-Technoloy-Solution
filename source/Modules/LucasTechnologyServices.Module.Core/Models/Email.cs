@@ -14,6 +14,6 @@ namespace LucasTechnologyServices.Module.Core.Models
         {
             EmailAddress = emailAddress;
         }
-        public string EmailAddress { get; set; }
+        public string EmailAddress { get; private set; }
     }
 }
