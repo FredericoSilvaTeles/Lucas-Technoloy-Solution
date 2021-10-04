@@ -17,25 +17,25 @@ namespace LucasTechnologyServices.Module.Core.Models
 
         [Required(ErrorMessage = "The {0} field is required.")]
         [StringLength(100)]
-        public string Name { get; set; }
+        public string Name { get; private set; }
 
         [Required(ErrorMessage = "The {0} field is required.")]
         [StringLength(450)]
-        public string Slug { get; set; }
+        public string Slug { get; private set; }
 
         public string Description { get; private set; }
 
-        public string Email { get; set; }
+        public string Email { get; private set; }
 
-        public DateTimeOffset CreatedOn { get; set; }
+        public DateTimeOffset CreatedOn { get; private set; }
 
-        public DateTimeOffset LatestUpdatedOn { get; set; }
+        public DateTimeOffset LatestUpdatedOn { get; private set; }
 
-        public bool IsActive { get; set; }
+        public bool IsActive { get; private set; }
 
-        public bool IsDeleted { get; set; }
+        public bool IsDeleted { get; private set; }
 
-        public IList<User> Users { get; set; } = new List<User>();
+        public IList<User> Users { get; private set; } = new List<User>();
 
     }
 }

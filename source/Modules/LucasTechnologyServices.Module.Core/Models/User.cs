@@ -31,7 +31,13 @@ namespace LucasTechnologyServices.Module.Core.Models
 
         public DateTimeOffset LatestUpdatedOn { get; set; }
 
+        public IList<UserAddress> UserAddresses { get; set; } = new List<UserAddress>();
+
+        public UserAddress DefaultShippingAddress { get; set; }
+
         public long? DefaultShippingAddressId { get; set; }
+
+        public UserAddress DefaultBillingAddress { get; set; }
 
         public long? DefaultBillingAddressId { get; set; }
 

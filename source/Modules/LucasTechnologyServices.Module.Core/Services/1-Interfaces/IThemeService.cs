@@ -1,5 +1,4 @@
-﻿
-using LucasTechnologyServices.Module.Core.Areas.ViewModels;
+﻿using LucasTechnologyServices.Module.Core.Areas.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.IO;

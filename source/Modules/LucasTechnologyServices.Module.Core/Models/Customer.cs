@@ -1,6 +1,5 @@
 using LucasTechnologyService.Infrastructure.Models;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
 namespace LucasTechnologyServices.Module.Core.Models
@@ -18,18 +17,10 @@ namespace LucasTechnologyServices.Module.Core.Models
             _addresses = new List<Address>();
         }
 
-
-        [StringLength(450)]
-        public string Name { get; set; }
-
-        [Required(ErrorMessage = "The {0} field is required.")]
-        public Document Document { get; set; }
-
-        public Email Email { get; set; }
-
-        [Required(ErrorMessage = "The {0} field is required.")]
-        [StringLength(21)]
-        public string Phone { get; set; }
+        public string Name { get; private set; }
+        public Document Document { get; private set; }
+        public Email Email { get; private set; }
+        public string Phone { get; private set; }
         public IReadOnlyCollection<Address> Addresses => _addresses.ToArray();
 
         public void AddAddress(Address address)

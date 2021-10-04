@@ -13,11 +13,11 @@ namespace LucasTechnologyServices.Module.Core.Models
         
         [Required(ErrorMessage = "The {0} field is required")]
         [StringLength(100)]
-        public string Name { get; set; }
+        public string Name { get; private set; }
         
         [StringLength(50)]
-        public string Type { get; set; }
-        public string Location { get; set; }
+        public string Type { get; private set; }
+        public string Location { get; private set; }
         
 
     }
