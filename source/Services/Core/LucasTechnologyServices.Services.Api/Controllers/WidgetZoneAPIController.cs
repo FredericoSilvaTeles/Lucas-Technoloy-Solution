@@ -11,5 +11,21 @@ namespace LucasTechnologyServices.Services.Api.Controllers
     [ApiController]
     public class WidgetZoneAPIController : ControllerBase
     {
+        
+        [Services("Core")]
+        [Authorize(Roles = "admin")]
+        [Route("api/widget-zone")]
+        public WidgetAPIController(IRepository<WidgetZone> WidgetZoneRepository)
+        {
+            _widgetZoneRepository = WidgetZoneRepository;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+
+        }
+           
+
     }
 }
