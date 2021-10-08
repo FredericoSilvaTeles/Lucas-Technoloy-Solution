@@ -23,10 +23,13 @@ jobs:
         include-prerelease: true
 
     - name: Build with dotnet
-      run: dotnet build ./source/LucasTechnologyServices.sln
+      run: dotnet build ./LTS/source/LucasTechnologyServices.sln
       
     - name: Restore
-      run: dotnet restore ./source/LucasTechnologyServices.sln
+      run: dotnet restore ./LTS/source/LucasTechnologyServices.sln
+      
+    - name: Tests
+      run: dotnet test './LTS/test/**/*.csproj'
 
     
 
