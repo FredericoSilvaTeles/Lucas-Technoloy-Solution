@@ -1,10 +1,5 @@
 ﻿using Microsoft.AspNetCore.Razor.TagHelpers;
 using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LucasTechnologyServices.Module.Core.Extensions.TagHelpers
 {
@@ -42,7 +37,7 @@ namespace LucasTechnologyServices.Module.Core.Extensions.TagHelpers
 
             if (output.Attributes.ContainsName("src"))
             {
-                var src = output.Attributes
+                var src = output.Attributes;
             }
         }
     }
