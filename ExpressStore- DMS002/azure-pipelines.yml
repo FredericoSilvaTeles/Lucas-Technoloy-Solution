@@ -16,30 +16,24 @@ jobs:
     inputs:
       packageType: 'sdk'
       version: '5.0.100'
-<<<<<<< HEAD
-<<<<<<< HEAD:Express Store- DMS002/azure-pipelines-exs.yml
+
   - script: dotnet build ./Express Store-DMS002/SimplCommerce.sln
-=======
-<<<<<<< HEAD:azure-pipelines.yml
-  - script: dotnet build ./source/LucasTechnologyServices.sln
->>>>>>> 08c4e0c5fb7f8dfddac95bee8864b124af2dc22f
-=======
-  - script: dotnet build ./ExpressStore-DMS002/SimplCommerce.sln
->>>>>>> 08c4e0c5fb7f8dfddac95bee8864b124af2dc22f:ExpressStore- DMS002/azure-pipelines.yml
+
+
     displayName: 'dotnet build'
   - task: DotNetCoreCLI@2
     displayName: 'run tests'
     inputs:
       command: test
       arguments:  '--logger trx /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Exclude=[xunit.*]*%2c[System.*]*'
-      projects: 'test/**/*.csproj'
+      projects: 'ExpressStore-DMS002/test/**/*.csproj'
       nobuild: true
   - task: DotNetCoreCLI@2
     inputs:
       command: custom
       custom: tool
       arguments: install --tool-path . dotnet-reportgenerator-globaltool
-      displayName: Install ReportGenerator tool
+    displayName: Install ReportGenerator tool
   - script: ./reportgenerator "-reports:$(Build.SourcesDirectory)/test/**/coverage.cobertura.xml" "-targetdir:$(Build.SourcesDirectory)/coverlet/reports" "-reporttypes:HtmlInline_AzurePipelines;Cobertura"
     displayName: Create reports
   - task: PublishCodeCoverageResults@1
@@ -57,34 +51,25 @@ jobs:
     inputs:
       packageType: 'sdk'
       version: '5.0.100'
-<<<<<<< HEAD
-<<<<<<< HEAD:Express Store- DMS002/azure-pipelines-exs.yml
+
   - script: dotnet build ./Express Store-DMS002/SimplCommerce.sln
-=======
-<<<<<<< HEAD:azure-pipelines.yml
-  - script: dotnet build ./source/LucasTechnologyServices.sln
->>>>>>> 08c4e0c5fb7f8dfddac95bee8864b124af2dc22f
-=======
-  - script: dotnet build ./ExpressStore-DMS002/SimplCommerce.sln
->>>>>>> 08c4e0c5fb7f8dfddac95bee8864b124af2dc22f:ExpressStore- DMS002/azure-pipelines.yml
+
     displayName: 'dotnet build'
   - task: DotNetCoreCLI@2
     displayName: 'run tests'
     inputs:
       command: test
       arguments:  '--logger trx /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Exclude=[xunit.*]*%2c[System.*]*'
-<<<<<<< HEAD
+
       projects: 'Express Sore=DMS002/test/**/*.csproj'
-=======
-      projects: 'test/**/*.csproj'
->>>>>>> 08c4e0c5fb7f8dfddac95bee8864b124af2dc22f
+
       nobuild: true
   - task: DotNetCoreCLI@2
     inputs:
       command: custom
       custom: tool
       arguments: install --tool-path . dotnet-reportgenerator-globaltool
-      displayName: Install ReportGenerator tool
+    displayName: Install ReportGenerator tool
   - script: ./reportgenerator -reports:$(Build.SourcesDirectory)/test/**/coverage.cobertura.xml -targetdir:$(Build.SourcesDirectory)/coverlet/reports -reporttypes:"HtmlInline_AzurePipelines;Cobertura"
     displayName: Create reports
   - task: PublishCodeCoverageResults@1
@@ -108,30 +93,23 @@ jobs:
       command: 'restore'
       projects: '**/*/*.csproj'
       includeNuGetOrg: true
-<<<<<<< HEAD
-<<<<<<< HEAD:Express Store- DMS002/azure-pipelines-exs.yml
+
   - script: dotnet build ./Express Store-DMS002/SimplCommerce.sln
-=======
-<<<<<<< HEAD:azure-pipelines.yml
-  - script: dotnet build ./source/LucasTechnologyServices.sln
->>>>>>> 08c4e0c5fb7f8dfddac95bee8864b124af2dc22f
-=======
-  - script: dotnet build ./ExpressStore-DMS002/SimplCommerce.sln
->>>>>>> 08c4e0c5fb7f8dfddac95bee8864b124af2dc22f:ExpressStore- DMS002/azure-pipelines.yml
+
     displayName: 'dotnet build'
   - task: DotNetCoreCLI@2
     displayName: 'run tests'
     inputs:
       command: test
       arguments:  '--logger trx /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Exclude=[xunit.*]*%2c[System.*]*'
-      projects: 'test/**/*.csproj'
+      projects: 'ExpressStore-DMS002/test/**/*.csproj'
       nobuild: true
   - task: DotNetCoreCLI@2
     inputs:
       command: custom
       custom: tool
       arguments: install --tool-path . dotnet-reportgenerator-globaltool
-      displayName: Install ReportGenerator tool
+    displayName: Install ReportGenerator tool
   - script: .\reportgenerator -reports:$(Build.SourcesDirectory)\test\**\coverage.cobertura.xml -targetdir:$(Build.SourcesDirectory)\coverlet\reports -reporttypes:"HtmlInline_AzurePipelines;Cobertura"
     displayName: Create reports 
   - task: PublishCodeCoverageResults@1
@@ -151,31 +129,26 @@ jobs:
     inputs:
       packageType: 'sdk'
       version: '5.0.100'
-<<<<<<< HEAD
-  - script: dotnet build --configuration $(buildConfiguration)
-    displayName: 'dotnet build $(buildConfiguration)'
-=======
-  - script: dotnet build ./source/LucasTechnologyServices.sln
+
+  - script: dotnet build ./ExpressStore-DMS002/SimplCommerce.sln
     displayName: 'dotnet build'
-  
->>>>>>> 08c4e0c5fb7f8dfddac95bee8864b124af2dc22f
+
+    
   - task: DotNetCoreCLI@2
     displayName: 'run tests'
     inputs:
       command: test
       arguments:  '--configuration $(buildConfiguration) --logger trx /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Exclude=[xunit.*]*%2c[System.*]*'
-<<<<<<< HEAD
+
       projects: 'Express Store-DMS002/test/**/*.csproj'
-=======
-      projects: 'test/**/*.csproj'
->>>>>>> 08c4e0c5fb7f8dfddac95bee8864b124af2dc22f
+
       nobuild: true
   - task: DotNetCoreCLI@2
     inputs:
       command: custom
       custom: tool
       arguments: install --tool-path . dotnet-reportgenerator-globaltool
-      displayName: Install ReportGenerator tool
+    displayName: Install ReportGenerator tool
   - script: ./reportgenerator -reports:$(Build.SourcesDirectory)/test/**/coverage.cobertura.xml -targetdir:$(Build.SourcesDirectory)/coverlet/reports -reporttypes:"HtmlInline_AzurePipelines;Cobertura"
     displayName: Create reports   
   - task: PublishCodeCoverageResults@1
