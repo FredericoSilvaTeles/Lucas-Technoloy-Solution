@@ -1,17 +1,12 @@
 ﻿using Microsoft.AspNetCore.Razor.TagHelpers;
 using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LucasTechnologyServices.Module.Core.Extensions.TagHelpers
 {
     [HtmlTargetElement(Attributes = AppendVersionAttributeName)]
     public class AppendVersionTagHelper : TagHelper
     {
-        private const AppendVersionAttributeName = "lts-append-version";
+        private const string AppendVersionAttributeName = "lts-append-version";
         private readonly IConfiguration _config;
 
         public AppendVersionTagHelper(IConfiguration config)
@@ -20,16 +15,15 @@ namespace LucasTechnologyServices.Module.Core.Extensions.TagHelpers
         }
 
         [HtmlAttributeName(AppendVersionAttributeName)]
-        public bool Appendversion { get; set; }
+        public bool AppendVersion { get; set; }
 
         public override int Order => int.MinValue;
-
-        public string AppendVersionAttributeName { get; private set; }
 
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
             output.Attributes.RemoveAll(AppendVersionAttributeName);
-            if (!Appendversion)
+
+            if (!AppendVersion)
             {
                 return;
             }
@@ -37,13 +31,26 @@ namespace LucasTechnologyServices.Module.Core.Extensions.TagHelpers
             if (output.Attributes.ContainsName("href"))
             {
                 var href = output.Attributes["href"].Value.ToString();
-                output.Attributes
+                output.Attributes.SetAttribute("href", AppendVersionToUrl(href));
             }
 
             if (output.Attributes.ContainsName("src"))
             {
-                var src = output.Attributes
+                var src = output.Attributes["src"].Value.ToString();
+                output.Attributes.SetAttribute("src", AppendVersionToUrl(src));
             }
+        }
+
+        private string AppendVersionToUrl(string url)
+        {
+            if (string.IsNullOrWhiteSpace(url))
+            {
+                return string.Empty;
+            }
+
+            var version = _config["Global.AssetVersion"];
+
+            return url.Contains("?") ? $"{url}&v={version}" : $"{url}?v={version}";
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using LucasTechnologyService.Infrastructure.Extensions;
+using System.Collections.Generic;
 using System.Collections.Immutable;
 
 
