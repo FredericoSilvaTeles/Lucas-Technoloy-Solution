@@ -29,13 +29,9 @@ jobs:
       run: dotnet restore ./LTS/source/LucasTechnologyServices.sln
       
     - name: Tests
-      run: dotnet test './LTS/test/**/*.csproj'
+      run: dotnet test 'LTS/test/**/*.csproj'
 
     
 
-    - name: Upload artifact for deployment job
-      uses: actions/upload-artifact@v2
-      with:
-        name: .net-app
-        path: ${{env.DOTNET_ROOT}}/myapp
+    
 
