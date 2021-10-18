@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace LucasTechnologyServices.Module.HR.Tests
+namespace LucasTechnologyServices.Modules.Infrastructure.Tests
 {
     public class UnitTest1
     {
