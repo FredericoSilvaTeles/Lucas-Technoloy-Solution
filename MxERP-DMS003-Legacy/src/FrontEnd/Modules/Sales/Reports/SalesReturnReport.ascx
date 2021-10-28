@@ -1,2 +1,0 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SalesReturnReport.ascx.cs" Inherits="MixERP.Net.Core.Modules.Sales.Reports.SalesReturnReport"
-    MasterPageId="MixERPReportMaster.Master" RemoveTheme="true" IsLandingPage="true" %>

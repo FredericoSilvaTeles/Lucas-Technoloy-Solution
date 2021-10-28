@@ -1,7 +1,0 @@
-{
-  "name": "lts-app",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

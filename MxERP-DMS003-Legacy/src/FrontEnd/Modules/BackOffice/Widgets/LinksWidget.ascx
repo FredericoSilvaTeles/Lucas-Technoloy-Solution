@@ -1,2 +1,0 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="LinksWidget.ascx.cs" Inherits="MixERP.Net.Core.Modules.BackOffice.Widgets.LinksWidget" %>
-<asp:PlaceHolder runat="server" ID="Placeholder1"></asp:PlaceHolder>

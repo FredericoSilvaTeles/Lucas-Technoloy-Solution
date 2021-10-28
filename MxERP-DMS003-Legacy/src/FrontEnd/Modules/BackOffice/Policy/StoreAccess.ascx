@@ -1,1 +1,0 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="StoreAccess.ascx.cs" Inherits="MixERP.Net.Core.Modules.BackOffice.Policy.StoreAccess" %>
