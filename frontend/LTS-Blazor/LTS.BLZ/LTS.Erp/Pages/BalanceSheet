@@ -1,8 +1,0 @@
-@page "/accounting/bnt"
-
-<h3>Balanço Patrimonial
-
-
-@code {
-
-}

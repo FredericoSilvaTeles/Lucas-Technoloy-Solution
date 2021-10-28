@@ -1,3 +1,0 @@
-# ALOS.Modules.Erp.ConsoleApp
-
-

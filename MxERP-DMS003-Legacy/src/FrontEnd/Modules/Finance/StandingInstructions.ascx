@@ -1,1 +1,0 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="StandingInstructions.ascx.cs" Inherits="MixERP.Net.Core.Modules.Finance.StandingInstructions" %>
