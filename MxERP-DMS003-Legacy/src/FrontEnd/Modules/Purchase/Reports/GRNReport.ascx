@@ -1,2 +1,0 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="GRNReport.ascx.cs" Inherits="MixERP.Net.Core.Modules.Purchase.Reports.GRNReport"
-    MasterPageId="MixERPReportMaster.Master" RemoveTheme="true" IsLandingPage="true" %>
