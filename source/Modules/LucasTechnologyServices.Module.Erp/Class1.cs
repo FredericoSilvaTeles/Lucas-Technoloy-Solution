@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LucasTechnologyServices.Module.Infrastructure
+namespace LucasTechnologyServices.Module.Erp
 {
     public class Class1
     {
