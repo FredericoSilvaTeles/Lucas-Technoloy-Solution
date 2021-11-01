@@ -1,9 +1,6 @@
-﻿using LucasTechnologyServices.Module.Core.Areas.ViewModels;
-using System;
+﻿using LucasTechnologyServices.AppService.Core.ViewModels;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace LucasTechnologyServices.Module.Core.Services._1_Interfaces
